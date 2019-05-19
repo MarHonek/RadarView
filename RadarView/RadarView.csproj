@@ -1,0 +1,695 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F13FF1C5-6E5D-4D93-8FE6-ACA6DA891572}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RadarView</RootNamespace>
+    <AssemblyName>RadarView</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>radar.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="GuerrillaNtp, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GuerrillaNtp.1.4.1\lib\netstandard1.5\GuerrillaNtp.dll</HintPath>
+    </Reference>
+    <Reference Include="LilyPath">
+      <HintPath>Lib\LilyPath.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.4.0\lib\net461\MathNet.Numerics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.7.1.189, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\lib\net45\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.WpfInterop, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoGame.Framework.WpfInterop.1.7.1\lib\net452\MonoGame.Framework.WpfInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="MoreLinq.Portable, Version=1.4.18916.0, Culture=neutral, PublicKeyToken=384d532d7e88985d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MoreLinq.Portable.1.4.0\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\MoreLinq.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Priority Queue, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\OptimizedPriorityQueue.4.2.0\lib\net45\Priority Queue.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.2.1.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.2.1\lib\net452\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SharpDX, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.0.1\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct2D1.4.0.1\lib\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D11.4.0.1\lib\net45\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D9, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Direct3D9.4.0.1\lib\net45\SharpDX.Direct3D9.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DXGI.4.0.1\lib\net45\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Mathematics, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.Mathematics.4.0.1\lib\net45\SharpDX.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.MediaFoundation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.MediaFoundation.4.0.1\lib\net45\SharpDX.MediaFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XAudio2, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.XAudio2.4.0.1\lib\net45\SharpDX.XAudio2.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.XInput, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.XInput.4.0.1\lib\net45\SharpDX.XInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.Tracing.4.3.0\lib\net462\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.0\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Unity.Abstractions, Version=4.0.3.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.9.4\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.9.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.9.4\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ZedGraph, Version=5.1.7.430, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.7\lib\net35-Client\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="View\AboutBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\WindowAirportSelection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Model\Entities\Aviation\AircraftPredictedStateVector.cs" />
+    <Compile Include="Model\Entities\Aviation\PredictorResultEnum.cs" />
+    <Compile Include="Model\Render\Controller\RendererControllerEventArgs.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftInfo.cs" />
+    <Compile Include="Model\Entities\Aviation\Aircraft.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftIdentifier.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftRawDataBuilder.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftFix.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftRawData.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftRawDataCollection.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftStateVector.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftType.cs" />
+    <Compile Include="Model\Entities\AviationData\AircraftDataSourceEnum.cs" />
+    <Compile Include="Model\Service\SessionContext\DataSourceSessionContext.cs" />
+    <Compile Include="Model\Entities\Aviation\Interface\IRenderingSample.cs" />
+    <Compile Include="Model\Render\IRenderer.cs" />
+    <Compile Include="Model\Render\Controller\IRendererController.cs" />
+    <Compile Include="Model\DataService\Network\AfisStripDataService.cs" />
+    <Compile Include="Model\DataService\Network\IAfisStripDataService.cs" />
+    <Compile Include="Model\Entities\AviationData\AircraftDataSourceWrapper.cs" />
+    <Compile Include="Model\Entities\Exceptions\UdpClientException.cs" />
+    <Compile Include="Model\Entities\Json\AfisStripJsonMessage.cs" />
+    <Compile Include="Model\Entities\MapLayer\MapLayer.cs" />
+    <Compile Include="Model\Entities\MapLayer\MapLayerCollection.cs" />
+    <Compile Include="Model\DataService\AviationData\AirportDataService\AirportDataService.cs" />
+    <Compile Include="Model\DataService\AviationData\AirportDataService\IAirportDataService.cs" />
+    <Compile Include="Model\DataService\AviationData\AirspaceDataService\AirspaceDataService.cs" />
+    <Compile Include="Model\DataService\AviationData\AirspaceDataService\IAirspaceDataService.cs" />
+    <Compile Include="Model\DataService\Map\MapImageDataSource\IMapImageDataService.cs" />
+    <Compile Include="Model\DataService\Map\MapImageDataSource\MapImageDataService.cs" />
+    <Compile Include="Model\DataService\Weather\IWeatherDataService.cs" />
+    <Compile Include="Model\DataService\Weather\PrecipitationRadarDataService\IPrecipitationRadarDataService.cs" />
+    <Compile Include="Model\DataService\Weather\PrecipitationRadarDataService\PrecipitationRadarDataService.cs" />
+    <Compile Include="Model\DataService\Weather\WeatherDataService.cs" />
+    <Compile Include="Model\Entities\AviationData\Airports\AirportType.cs" />
+    <Compile Include="Model\Entities\AviationData\Airports\Runway.cs" />
+    <Compile Include="Model\Entities\Exceptions\ImageDownloadClientException.cs" />
+    <Compile Include="Model\Entities\Exceptions\RestApiClientException.cs" />
+    <Compile Include="Model\Entities\Weather\Clouds.cs" />
+    <Compile Include="Model\Entities\Weather\Weather.cs" />
+    <Compile Include="Model\Entities\Weather\WeatherDayInfo.cs" />
+    <Compile Include="Model\Entities\Weather\WeatherServiceInfo.cs" />
+    <Compile Include="Model\Entities\Weather\WeatherCoodinates.cs" />
+    <Compile Include="Model\Entities\Weather\Wind.cs" />
+    <Compile Include="Model\Managers\DataSwitch\IAircraftDataSwitch.cs" />
+    <Compile Include="Model\Managers\LiveDataManager\IAircraftLiveDataManager.cs" />
+    <Compile Include="Model\Managers\MapProjection\IViewportProjection.cs" />
+    <Compile Include="Model\Render\Background\Airport\BackgroundAirportManager.cs" />
+    <Compile Include="Model\Render\Background\Airport\IBackgroundAirportManager.cs" />
+    <Compile Include="Model\Render\Background\Airspace\BackgroundAirspaceManager.cs" />
+    <Compile Include="Model\Render\Background\Airspace\IBackgroundAirspaceManager.cs" />
+    <Compile Include="Model\Render\Background\BackgroundManager\IBackgroundManager.cs" />
+    <Compile Include="Model\Render\Background\Map\IBackgroundMapManager.cs" />
+    <Compile Include="Model\Render\Background\PrecipitationRadar\IBackgroundPrecipitationRadar.cs" />
+    <Compile Include="Model\Render\MeasuringLine\IMeasuringLine.cs" />
+    <Compile Include="Model\Render\Targets\ITargetComponentsManager.cs" />
+    <Compile Include="Model\Service\AircraftDataSourceService\IAircraftDataSourceClient.cs" />
+    <Compile Include="Model\Service\ApiRestClient\ApiRestClient.cs" />
+    <Compile Include="Model\Service\ApiRestClient\IApiRestClient.cs" />
+    <Compile Include="Model\Service\AviationData\IAirportFileReader.cs" />
+    <Compile Include="Model\Service\AviationData\IAirspaceFileReader.cs" />
+    <Compile Include="Model\Service\Config\Colors.cs" />
+    <Compile Include="Model\Service\ImageDownloadClient\IImageDownloadClient.cs" />
+    <Compile Include="Model\Service\ImageDownloadClient\ImageDownloadClient.cs" />
+    <Compile Include="Model\Service\SessionContext\ISessionContext.cs" />
+    <Compile Include="Model\Service\SessionContext\SessionContext.cs" />
+    <Compile Include="Model\Service\UdpCommunicationClient\IUdpCommunicationClient.cs" />
+    <Compile Include="Model\Service\UdpCommunicationClient\UdpCommunicationClient.cs" />
+    <Compile Include="Model\Service\Utils\DataSourcePriorityHelper.cs" />
+    <Compile Include="Model\Service\Utils\RestSharpJsonNetSerializer.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Model\Render\Controller\RendererController.cs" />
+    <Compile Include="Model\Render\Background\Map\BackgroundMapManager.cs" />
+    <Compile Include="Model\Service\Predictor\Predictor.cs" />
+    <Compile Include="Model\Render\Background\MonitoredArea\BackgroundArea.cs" />
+    <Compile Include="Model\Entities\AviationData\Airspace\Airspace.cs" />
+    <Compile Include="Model\Entities\AviationData\Airspace\AirspaceAltLimitReference.cs" />
+    <Compile Include="Model\Entities\AviationData\Airspace\AirspaceCategory.cs" />
+    <Compile Include="Model\Entities\AviationData\Airspace\AirspaceGeometry.cs" />
+    <Compile Include="Model\Entities\AviationData\Airspace\AirspaceAltLimit.cs" />
+    <Compile Include="Model\Entities\AviationData\Airspace\XmlOpenAipAirspace.cs" />
+    <Compile Include="Model\Entities\Aviation\AircraftManeuver.cs" />
+    <Compile Include="Model\Entities\Geographic\BoundingBox.cs" />
+    <Compile Include="Model\Service\AviationData\OpenAipAviationDataReader.cs" />
+    <Compile Include="Model\Entities\Geographic\Location.cs" />
+    <Compile Include="Model\Managers\DataSwitch\AircraftDataSwitch.cs" />
+    <Compile Include="Model\Managers\MapProjection\MapProjection.cs" />
+    <Compile Include="Model\Service\AircraftDataSourceService\AicraftDataSourceClient.cs" />
+    <Compile Include="Model\Render\Abstract\IRenderable.cs" />
+    <Compile Include="Model\Render\MeasuringLine\MeasuringLine.cs" />
+    <Compile Include="Model\Managers\LiveDataManager\AicraftLiveDataManager.cs" />
+    <Compile Include="Model\Render\Background\Airport\BackgroundAirport.cs" />
+    <Compile Include="Model\Render\Background\Airspace\BackgroundAirspace.cs" />
+    <Compile Include="Model\Render\Background\Map\BackgroundMap.cs" />
+    <Compile Include="Model\Render\Background\Airport\BackgroundRunway.cs" />
+    <Compile Include="Model\Render\Background\PrecipitationRadar\BackgroundPrecipitationRadar.cs" />
+    <Compile Include="Model\Render\Background\BackgroundManager\BackgroundManager.cs" />
+    <Compile Include="Model\Render\Abstract\GeographicRenderShape.cs" />
+    <Compile Include="Model\Render\Renderer.cs" />
+    <Compile Include="Model\Render\Abstract\RenderObject.cs" />
+    <Compile Include="Model\Render\Abstract\GeographicRenderObject.cs" />
+    <Compile Include="Model\Render\Targets\TargetComponents.cs" />
+    <Compile Include="Model\Render\Targets\TargetComponentsManager.cs" />
+    <Compile Include="Model\Render\Targets\Target.cs" />
+    <Compile Include="Model\Render\Targets\TargetLabel.cs" />
+    <Compile Include="Model\Render\Targets\TargetLabelConnector.cs" />
+    <Compile Include="Model\Render\Targets\TargetRealFix.cs" />
+    <Compile Include="Model\Render\Targets\TargetSpeedVector.cs" />
+    <Compile Include="Model\Render\Targets\TargetTRailDot.cs" />
+    <Compile Include="Model\Managers\MapProjection\ViewportProjection.cs" />
+    <Compile Include="Utils\MapUtils.cs" />
+    <Compile Include="Utils\MathFittingCircle.cs" />
+    <Compile Include="ViewModel\Converters\AirportToListBoxValueConverter.cs" />
+    <Compile Include="ViewModel\Converters\BoundingBoxDictionaryJsonConverter.cs" />
+    <Compile Include="ViewModel\Converters\ReplayFlagToColorValueConverter.cs" />
+    <Compile Include="ViewModel\Converters\StringToColorJsonConverter.cs" />
+    <Compile Include="ViewModel\MainWindow\MainWindowStatusPanelViewModel.cs" />
+    <Compile Include="ViewModel\WindowAirportSelection\IWindowAirportSelectionViewModel.cs" />
+    <Compile Include="ViewModel\WindowAirportSelection\RunwayViewModel.cs" />
+    <Compile Include="ViewModel\WindowAirportSelection\WindowAirportSelectionViewModel.cs" />
+    <Compile Include="ViewModel\WindowSettings\IWindowsSettingsViewModel.cs" />
+    <Compile Include="ViewModel\WindowSettings\WindowsSettingsViewModel.cs" />
+    <Compile Include="View\SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entities\Target\TargetHighlight.cs" />
+    <Compile Include="Utils\ColorUtil.cs" />
+    <Compile Include="Utils\DateFormatHelper.cs" />
+    <Compile Include="Utils\MathExtension.cs" />
+    <Compile Include="Utils\StringExtension.cs" />
+    <Compile Include="Model\Managers\MapProjection\WebMercatorProjection.cs" />
+    <Compile Include="Model\Entities\Weather\WeatherData.cs" />
+    <Compile Include="View\AboutBox.xaml.cs">
+      <DependentUpon>AboutBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\Base\BaseViewModel.cs" />
+    <Compile Include="ViewModel\Base\AsyncCommand.cs" />
+    <Compile Include="ViewModel\Converters\AltitudeToStringValueConverter.cs" />
+    <Compile Include="ViewModel\Converters\AltitudeToWarningColorBrushConverter.cs" />
+    <Compile Include="ViewModel\Converters\BoolToVisibilityValueConverter.cs" />
+    <Compile Include="ViewModel\Converters\DateTimeToStringValueConverter.cs" />
+    <Compile Include="ViewModel\Converters\WeatherToStringValueConverter.cs" />
+    <Compile Include="ViewModel\Converters\ValueToStringWithUnitValueConverter.cs" />
+    <Compile Include="ViewModel\Converters\WeatherVisibilityFormatValueConverter.cs" />
+    <Compile Include="ViewModel\MainWindow\IMainWindowViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\MainWindowMapViewModel.cs" />
+    <Compile Include="ViewModel\MainWindow\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\Base\RelayCommand.cs" />
+    <Compile Include="ViewModel\MainWindow\MainWindowWeatherViewModel.cs" />
+    <Compile Include="View\WindowAirportSelection.xaml.cs">
+      <DependentUpon>WindowAirportSelection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Entities\AviationData\Airports\Airport.cs" />
+    <Compile Include="Model\Service\AviationData\AirportFileReader.cs" />
+    <Compile Include="Model\Service\AviationData\AirspaceFileReader.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Content\anticlockwise.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Anticlockwise_arrow.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\AviationData\openaip_airspace_czech_republic_cz.aip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\AviationData\airports.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\AviationData\runways.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Circle.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Content.mgcb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Cross.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\DefaultFont.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Equals.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\File.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Filled_rectangle.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Letter_star.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\north-east-arrow.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\North_east_arrow.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Rectangle.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\South_east_arrow.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\TargetLabelFont.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Test.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\Triangle.xnb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{88F776C6-4DB8-4FDB-8E21-0213317AF0A5}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OgnAPI\OgnAPI.csproj">
+      <Project>{2be7a3d1-5bc1-4455-a5f7-a05238051056}</Project>
+      <Name>OgnAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OsnAPI\OsnAPI.csproj">
+      <Project>{95636ac6-2a97-478e-a2f3-d343a3ba051f}</Project>
+      <Name>OsnAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\BasicMap_LKCM_11.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\BasicMap_LKCM_13.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSource\OpenSkyNetwork\Replay0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSource\OpenGliderNetwork\Replay0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSource\FlightRadar\Replay0.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\radar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\BasicMap_LKCM_9.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\VfrMap_LKCM_9.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="radar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\radar-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets" Condition="Exists('..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MonoGame.Framework.WindowsDX.3.7.1.189\build\MonoGame.Framework.WindowsDX.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

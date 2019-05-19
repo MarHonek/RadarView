@@ -1,0 +1,241 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RadarView.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AirportSelected" Type="System.String" Scope="User">
+      <Value Profile="(Default)">LKCM</Value>
+    </Setting>
+    <Setting Name="OsnUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">445350</Value>
+    </Setting>
+    <Setting Name="OsnPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">qwert</Value>
+    </Setting>
+    <Setting Name="OgnEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OsnEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SpeedUnit" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Knots</Value>
+    </Setting>
+    <Setting Name="ActiveAirspaceColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FFFFFF</Value>
+    </Setting>
+    <Setting Name="BackgroundColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#003073</Value>
+    </Setting>
+    <Setting Name="AircraftOnGroundColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#808080	</Value>
+    </Setting>
+    <Setting Name="AircraftInAirColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#87CEEB</Value>
+    </Setting>
+    <Setting Name="AircraftSelectedColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#F0F0F0</Value>
+    </Setting>
+    <Setting Name="AircraftNotice1Color" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#00FF00</Value>
+    </Setting>
+    <Setting Name="AircraftNotice2Color" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FFA500</Value>
+    </Setting>
+    <Setting Name="AircraftAlert1Color" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FFFF00</Value>
+    </Setting>
+    <Setting Name="MapSourceUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://open.mapquestapi.com/staticmap/v4/getmap?key={0}&amp;size={1},{2}&amp;zoom={3}&amp;center={4},{5}</Value>
+    </Setting>
+    <Setting Name="MapSourceApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BPTfGFMqU5REeyC5R3I8rYGUXGmFpy7Z</Value>
+    </Setting>
+    <Setting Name="MapDownloadResolution" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+    <Setting Name="MapColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#505050</Value>
+    </Setting>
+    <Setting Name="MonitoredArea" Type="System.String" Scope="User">
+      <Value Profile="(Default)">49.61849 15.97027 48.8549 17.13973</Value>
+    </Setting>
+    <Setting Name="AfisStripUdpPort" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">11000</Value>
+    </Setting>
+    <Setting Name="PrecipitationRadarOpacity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="MonitoredAreaRectColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FFFFFF88</Value>
+    </Setting>
+    <Setting Name="AirportColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FAFAFA</Value>
+    </Setting>
+    <Setting Name="MeteoDataUpdateIntervalSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="PrecipitationRadarUpdateIntervalSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="MeteoDataUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://api.openweathermap.org/data/2.5/weather?lat={0}&amp;lon={1}&amp;appid={2}</Value>
+    </Setting>
+    <Setting Name="MeteoDataApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4376044d7f47ce4814566d60544dc6dd </Value>
+    </Setting>
+    <Setting Name="PrecipitationRadarArea" Type="System.String" Scope="User">
+      <Value Profile="(Default)">51.447900 11.288265 48.061492 19.608423</Value>
+    </Setting>
+    <Setting Name="PrecipitationRadarDateTimeUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://{0}.meteor.androworks.org/feed</Value>
+    </Setting>
+    <Setting Name="MonitoredAreaAutoSetSizeKilometers" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">85</Value>
+    </Setting>
+    <Setting Name="ViewRenderFPS" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="AircraftTrailDotsMaxCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="AircraftTrailDotsStandartCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="ViewZoomLevelChange" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="RenderUpdateInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+    <Setting Name="AircraftLabelAltitudeDigitsCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="AircraftLabelGroundSpeedDigitsCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="AircraftLabelAltSpeedSpacesCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="AircraftLabelColumnSpacesCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="PrecipitationRadarIsVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MeteoDataAreVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LocalTimeZone" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AirportRunwayThickness" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">2.5</Value>
+    </Setting>
+    <Setting Name="ViewMaxAltitude" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2147483647</Value>
+    </Setting>
+    <Setting Name="PrecipitationRadarImagesServerUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://{0}.meteor.androworks.org/images/radar/image-{1}</Value>
+    </Setting>
+    <Setting Name="PredictorVerticalSpeedThreshold" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.2</Value>
+    </Setting>
+    <Setting Name="AircraftSpeedVectorTimeLengthSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="PredictorVerticalSpeedTimeDiff" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="AircraftRealFixTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">180</Value>
+    </Setting>
+    <Setting Name="DataSourceLogsEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AircraftRealFixCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="DataSourcePriority" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;OGN&lt;/string&gt;
+  &lt;string&gt;OSN&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="MaxRealFixAgeSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">150</Value>
+    </Setting>
+    <Setting Name="AircraftRealFixTextureSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="AircraftTrailDotTextureSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="AircraftTargetTextureSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="AircraftMaxFadingTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">150</Value>
+    </Setting>
+    <Setting Name="PredictorSquawkAreaThreshold" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+    <Setting Name="MapConfig" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{"mapLayers":[{"name":"Základní mapa","imageName":"BasicMap","isVisible":false,"boundingBoxes":{"9":"51.85402 12.43535 46.47334 20.675","11":"49.90481 15.52526 48.5598 17.58519","13":"49.40472 16.29773 49.06847 16.81272"}},{"name":"VFR","imageName":"VfrMap","isVisible":false,"boundingBoxes":{"9":"50.287530 14.770606 47.998561 18.279964"}}]}</Value>
+    </Setting>
+    <Setting Name="PrecipitationRadarResourceTimestampFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">yyyyMMdd.HHmm</Value>
+    </Setting>
+    <Setting Name="NtpSynchronizationOffsetPanelIsVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AircraftTrailDotsUpdateIntervalMiliseconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5000</Value>
+    </Setting>
+    <Setting Name="AirportsAreVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NtpSynchronizationEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AirspaceCategoriesColors" Type="System.String" Scope="User">
+      <Value Profile="(Default)">		{"A":"#1E90FF","B":"#1E90FF", "C":"#1E90FF", "CTR":"#1E90FF", "D":"#1E90FF", "Danger":"#1E90FF", "E":"#1E90FF", "F":"#1E90FF", "G":"#1E90FF", "Gliding":"#1E90FF", "OTH":"#1E90FF", "Restricted":"#E68523", "TMA":"#1E90FF", "TMZ":"#1E90FF", "Wave":"#1E90FF", "Prohibited":"#DD5183", "FIR":"#1E90FF", "UIR":"#1E90FF", "RMZ":"#1E90FF", "Other":"#1E90FF"}</Value>
+    </Setting>
+    <Setting Name="NtpSynchronizationServerUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">pool.ntp.org</Value>
+    </Setting>
+    <Setting Name="NtpSynchronizationIntervalSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="AirportAreaSizeMeters" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8000</Value>
+    </Setting>
+    <Setting Name="PredictorMaxGroundSpeedForOnGroundDetection" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="PredictorAltitudeThresholdForOnGroundDetection" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">130</Value>
+    </Setting>
+    <Setting Name="PredictorMaxPredictedSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="PredictorMinTimeIntervaForPredictionSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="PredictorMinFixCountForLinearRegresion" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="AircraftRealFixesAreVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MeasuringLineThickness" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">2.5</Value>
+    </Setting>
+    <Setting Name="MeasuringLineColor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#FEF975</Value>
+    </Setting>
+    <Setting Name="PredictorMaxRadiusForCirleFitting" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">0.25</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
