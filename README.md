@@ -21,7 +21,7 @@ Odesílaná zpráva musí dodržovat následující formát:
 > {"activeAirspaces":["_název prostoru_"],"highlightedAircrafts":{"_identifikátor letadla_":"_typ zvýraznění letadla_"}}
 
 #### Název prostoru
-Názvy vzdušných prostorů lze najít v souboru **airports.csv**, ke kterému vede cesta *[Adresář aplikace]\Content\AviationData\airports.csv*
+Názvy vzdušných prostorů lze najít v souboru **airports.csv**, ke kterému vede cesta *[Adresář aplikace]\Content\AviationData\openaip_airspace_czech_republic_cz.aip*
 
 #### Identifikátor letadla
 Pro zvýraznění je možné následující identifikátory letadla:
