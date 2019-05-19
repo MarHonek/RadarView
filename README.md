@@ -96,12 +96,7 @@ V pravém horním rohu aplikace se nachází status panel.
 Nastavení aplikace je uloženo v konfiguračním souboru **user.config**
 Cesta ke konfiguračnímu souboru je: *%AppData%\RadarView\Radarview_Url_[hash]\\[verze aplikace]\user.config* uživatelském adresáři systémového disku.
 Příklad:
-> C:\Users\Martin\AppData\Local\RadarView\RadarView.exe_Url_uiwdpypmvjddtfp21gxdnwlx4nqs02gj\1.0.0.0\user.config
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+> C:\Users\Martin\AppData\Local\RadarView\RadarView.exe_Url_uiwdpypmvjddtfp21gxdnwlx4nqs02gj\1.3.0.0\user.config
 
 Další informace o návrhu a implementaci lze nalézt v bakalářské práci v rámci, které byla tato aplikace vytvořena.
 Bakalářská práce je dostupná z: *brzy*.
