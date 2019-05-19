@@ -4,12 +4,12 @@ Aplikaci spouští soubor **RadarView.exe** v adresáři aplikace.
 # Ovládání
 |       Ovládání myši        |      Akce     |
 | ------------- | ------------- |
-| Levé tlačítko myši (na popisku letadla) | Označení letadla. Přenutí základního/rozšířeného zobrazení informací o letadle.  |
-| Levé tlačítko myši (na popisku letadla) + pohyb myši | Posunutí popisku letadla.  |
-| Levé tlačítko myši (mimo popisek letadla) + pohyb myši  | Posunutí zobrazení.  |
-| Kolečko myši | Přiblížení/oddálení zobrazení (zoom). |
-| Pravé tlačítko + pohyb myši | Vytvoření měřící linie. |
-| Pravé tlačítko | Zrušení měřící linie. |
+| Kliknutí levého tlačítka myši na popisek cíle | Označení cíle. Přenutí základního/rozšířeného zobrazení informací o letadle.  |
+| Kliknutím a držením levého tlačítka myši na popisku cíle + pohyb myši | Posunutí popisku cíle.  |
+| Kliknutím a držením levého tlačítka myši (mimo popisek) + pohyb myši  | Posunutí zobrazení.  |
+| Pohybem kolečka myši | Přiblížení/oddálení zobrazení (zoom). |
+| Kliknutím a držením pravého tlačítka myši + pohyb myši | Vytvoření měřící linie. |
+| Kliknutím pravého tlačítka myši | Zrušení měřící linie. |
 
 
 # Zvýrazňování letadel a vzdušných prostorů pomocí protokolu UDP
@@ -88,16 +88,12 @@ Soubory v rámci jednoho dne jsou uloženy v adresáři s názvem ve formátu *y
 -**boudingBoxes**: souřadnice pro úrovně zoomu. [sever západ jih východ]\
 -**visibility**: true nebo false. Příznak, zda má být mapa zobrazena při spuštění aplikace.
 
-### Status Panel
-V pravém horním rohu aplikace se nachází status panel.
-
-
 ### Konfigurační soubor.
 Nastavení aplikace je uloženo v konfiguračním souboru **user.config**
 Cesta ke konfiguračnímu souboru je: *%AppData%\RadarView\Radarview_Url_[hash]\\[verze aplikace]\user.config* uživatelském adresáři systémového disku.
 Příklad:
 > C:\Users\Martin\AppData\Local\RadarView\RadarView.exe_Url_uiwdpypmvjddtfp21gxdnwlx4nqs02gj\1.3.0.0\user.config
 
-Další informace o návrhu a implementaci lze nalézt v bakalářské práci v rámci, které byla tato aplikace vytvořena.
+Další informace o návrhu a implementaci lze nalézt v bakalářské práci, v rámci které byla tato aplikace vytvořena.
 Bakalářská práce je dostupná z: *brzy*.
 
