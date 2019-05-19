@@ -5,10 +5,10 @@ Aplikaci spouští soubor **RadarView.exe** v adresáři aplikace.
 |       Ovládání myši        |      Akce     |
 | ------------- | ------------- |
 | Kliknutím levého tlačítka myši na popisek cíle. | Označení cíle. Přenutí základního/rozšířeného zobrazení informací o letadle.  |
-| Kliknutím a držením levého tlačítka myši na popisku cíle + pohybem myši. | Posunutí popisku cíle.  |
-| Kliknutím a držením levého tlačítka myši (mimo popisek) + pohybem myši.  | Posunutí zobrazení.  |
+| Držením levého tlačítka myši na popisku cíle + pohybem myši. | Posunutí popisku cíle.  |
+| Držením levého tlačítka myši (mimo popisek) + pohybem myši.  | Posunutí zobrazení.  |
 | Pohybem kolečka myši. | Přiblížení/oddálení zobrazení (zoom). |
-| Kliknutím a držením pravého tlačítka myši + pohybem myši. | Vytvoření měřící linie. |
+| Držením pravého tlačítka myši + pohybem myši. | Vytvoření měřící linie. |
 | Kliknutím pravého tlačítka myši. | Zrušení měřící linie. |
 
 
