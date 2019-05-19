@@ -4,12 +4,12 @@ Aplikaci spouští soubor **RadarView.exe** v adresáři aplikace.
 # Ovládání
 |       Ovládání myši        |      Akce     |
 | ------------- | ------------- |
-| Kliknutím levého tlačítka myši na popisek cíle | Označení cíle. Přenutí základního/rozšířeného zobrazení informací o letadle.  |
-| Kliknutím a držením levého tlačítka myši na popisku cíle + pohyb myši | Posunutí popisku cíle.  |
-| Kliknutím a držením levého tlačítka myši (mimo popisek) + pohyb myši  | Posunutí zobrazení.  |
-| Pohybem kolečka myši | Přiblížení/oddálení zobrazení (zoom). |
-| Kliknutím a držením pravého tlačítka myši + pohyb myši | Vytvoření měřící linie. |
-| Kliknutím pravého tlačítka myši | Zrušení měřící linie. |
+| Kliknutím levého tlačítka myši na popisek cíle. | Označení cíle. Přenutí základního/rozšířeného zobrazení informací o letadle.  |
+| Kliknutím a držením levého tlačítka myši na popisku cíle + pohybem myši. | Posunutí popisku cíle.  |
+| Kliknutím a držením levého tlačítka myši (mimo popisek) + pohybem myši.  | Posunutí zobrazení.  |
+| Pohybem kolečka myši. | Přiblížení/oddálení zobrazení (zoom). |
+| Kliknutím a držením pravého tlačítka myši + pohybem myši. | Vytvoření měřící linie. |
+| Kliknutím pravého tlačítka myši. | Zrušení měřící linie. |
 
 
 # Zvýrazňování letadel a vzdušných prostorů pomocí protokolu UDP
@@ -85,7 +85,7 @@ Soubory v rámci jednoho dne jsou uloženy v adresáři s názvem ve formátu *y
 
 -**name**: název typu mapy, který se zobrazí v tlačítku na zobrazení/skrytí mapy. \
 -**imageName**: název mapy, který je součástí názvu souboru. \
--**boudingBoxes**: souřadnice pro úrovně zoomu. [sever západ jih východ]\
+-**boudingBoxes**: souřadnice pro úrovně zoomu [sever západ jih východ].\
 -**visibility**: true nebo false. Příznak, zda má být mapa zobrazena při spuštění aplikace.
 
 ### Konfigurační soubor.
