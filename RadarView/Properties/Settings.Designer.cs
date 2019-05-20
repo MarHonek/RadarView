@@ -724,7 +724,9 @@ namespace RadarView.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"{""mapLayers"":[{""name"":""Základní mapa"",""imageName"":""BasicMap"",""isVisible"":false,""boundingBoxes"":{""9"":""51.85402 12.43535 46.47334 20.675"",""11"":""49.90481 15.52526 48.5598 17.58519"",""13"":""49.40472 16.29773 49.06847 16.81272""}},{""name"":""VFR"",""imageName"":""VfrMap"",""isVisible"":false,""boundingBoxes"":{""9"":""50.287530 14.770606 47.998561 18.279964""}}]}")]
+        [global::System.Configuration.DefaultSettingValueAttribute("{\"mapLayers\":[{\"name\":\"Základní mapa\",\"imageName\":\"BasicMap\",\"isVisible\":false,\"b" +
+            "oundingBoxes\":{\"9\":\"51.85402 12.43535 46.47334 20.675\",\"11\":\"49.90481 15.52526 4" +
+            "8.5598 17.58519\",\"13\":\"49.40472 16.29773 49.06847 16.81272\"}}]}")]
         public string MapConfig {
             get {
                 return ((string)(this["MapConfig"]));

@@ -640,20 +640,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="DataSource\FlightRadar\Replay0.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="View\radar.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\BasicMap_LKCM_9.jpeg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Content\VfrMap_LKCM_9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

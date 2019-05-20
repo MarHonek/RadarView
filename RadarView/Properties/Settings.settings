@@ -181,7 +181,7 @@
       <Value Profile="(Default)">5000</Value>
     </Setting>
     <Setting Name="MapConfig" Type="System.String" Scope="User">
-      <Value Profile="(Default)">{"mapLayers":[{"name":"Základní mapa","imageName":"BasicMap","isVisible":false,"boundingBoxes":{"9":"51.85402 12.43535 46.47334 20.675","11":"49.90481 15.52526 48.5598 17.58519","13":"49.40472 16.29773 49.06847 16.81272"}},{"name":"VFR","imageName":"VfrMap","isVisible":false,"boundingBoxes":{"9":"50.287530 14.770606 47.998561 18.279964"}}]}</Value>
+      <Value Profile="(Default)">{"mapLayers":[{"name":"Základní mapa","imageName":"BasicMap","isVisible":false,"boundingBoxes":{"9":"51.85402 12.43535 46.47334 20.675","11":"49.90481 15.52526 48.5598 17.58519","13":"49.40472 16.29773 49.06847 16.81272"}}]}</Value>
     </Setting>
     <Setting Name="PrecipitationRadarResourceTimestampFormat" Type="System.String" Scope="User">
       <Value Profile="(Default)">yyyyMMdd.HHmm</Value>
