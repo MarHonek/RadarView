@@ -74,7 +74,7 @@ Soubory v rámci jednoho dne jsou uloženy v adresáři s názvem ve formátu *y
 
 **Příklad přehrání informací z datového zdroje Open Glider Network:**
 1. Do adresáře *[Adresář aplikace]\DataSource\OpenGliderNetwork\Replay0.txt* jsou vložena data.
-2. Aplikace spuštěna s argumenty: *-r -g0*.
+2. Aplikace je spuštěna s argumenty: *-r -g0*.
 
 
 ### Import mapových podkladů:
