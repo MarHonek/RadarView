@@ -90,7 +90,7 @@ Soubory v rámci jednoho dne jsou uloženy v adresáři s názvem ve formátu *y
 
 ### Konfigurační soubor.
 Nastavení aplikace je uloženo v konfiguračním souboru **user.config**
-Cesta ke konfiguračnímu souboru je: *%AppData%\RadarView\Radarview_Url_[hash]\\[verze aplikace]\user.config* uživatelském adresáři systémového disku.
+Cesta ke konfiguračnímu souboru je: *%AppData%\RadarView\RadarView_Url_[hash]\\[verze aplikace]\user.config* uživatelském adresáři systémového disku.
 Příklad:
 > C:\Users\Martin\AppData\Local\RadarView\RadarView.exe_Url_uiwdpypmvjddtfp21gxdnwlx4nqs02gj\1.3.0.0\user.config
 
